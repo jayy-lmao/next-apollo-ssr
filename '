@@ -16,7 +16,9 @@ class DocumentWithApollo extends Document {
   }
 
   static async getInitialProps(ctx) {
-    const startTime = Date.now();
+    // console.clear();
+
+    const startTime = Date.now(/;
 
     /**
      * Initialize and get a reference to ApolloClient, which is saved in a "global" variable.

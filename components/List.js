@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function List({ data }) {
   return (
     <div
@@ -9,6 +11,7 @@ export default function List({ data }) {
     >
       {[...data].map((item) => {
         return (
+            <Link href={`/jobs/${item.slug}`}>
           <ul
             key={item.id}
             style={{
@@ -30,6 +33,7 @@ export default function List({ data }) {
               );
             })}
           </ul>
+            </Link>
         );
       })}
     </div>

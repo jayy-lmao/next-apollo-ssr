@@ -39,6 +39,7 @@ export const QUERY = gql`
       id
       title
       postedAt
+      slug
     }
   }
 `;
